@@ -3,6 +3,9 @@
   "description": "Material Design Lite Color collection",
   "version": "0.0.0",
   "author": "Yuki Yamada",
+  "bugs": {
+    "url": "https://github.com/yamadayuki/mdl-color/issues"
+  },
   "devDependencies": {
     "babel-cli": "^6.10.1",
     "babel-core": "^6.10.4",
@@ -35,22 +38,27 @@
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
   },
+  "homepage": "https://github.com/yamadayuki/mdl-color",
   "keywords": [
     "material design",
     "mdl-color"
   ],
   "license": "MIT",
   "main": "./lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yamadayuki/mdl-color"
+  },
   "scripts": {
     "build": "babel ./src --out-dir ./lib",
     "clean": "rimraf lib",
     "dev": "babel-node ./server.js",
     "lint": "eslint src && echo \"ESLint: no issues\"",
     "prepublish": "npm run build",
-    "test": "cross-env NODE_ENV=test babel-node test/index.js",
     "release": "npm run release-patch",
-    "release-patch": "npm version patch && git push origin master --tags && npm publish --access=public",
+    "release-major": "npm version major && git push origin master --tags && npm publish --access=public",
     "release-minor": "npm version minor && git push origin master --tags && npm publish --access=public",
-    "release-major": "npm version major && git push origin master --tags && npm publish --access=public"
+    "release-patch": "npm version patch && git push origin master --tags && npm publish --access=public",
+    "test": "cross-env NODE_ENV=test babel-node test/index.js"
   }
 }
