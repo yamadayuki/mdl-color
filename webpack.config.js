@@ -7,7 +7,7 @@ const config = {
     'babel-polyfill',
     'webpack-dev-server/client?http://localhost:3000',
     'webpack/hot/only-dev-server',
-    path.join(__dirname, 'index.js'),
+    path.join(__dirname, 'app.js'),
   ],
   output: {
     path: `${__dirname}/`,
