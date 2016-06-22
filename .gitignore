@@ -1,0 +1,17 @@
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Dependency
+node_modules
+
+# OSX
+.DS_STORE
+
+# Built files
+/lib
