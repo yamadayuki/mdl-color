@@ -12,6 +12,3 @@ node_modules
 
 # OSX
 .DS_STORE
-
-# Built files
-/lib

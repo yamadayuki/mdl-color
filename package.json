@@ -54,7 +54,7 @@
     "dev": "babel-node ./server.js",
     "lint": "eslint src && echo \"ESLint: no issues\"",
     "prebuild": "npm run clean && mkdir -p lib",
-    "postinstall": "npm run build",
+    "prepublish": "npm run build",
     "release": "npm run release-patch",
     "release-major": "npm version major && git push origin master --tags && npm publish --access=public",
     "release-minor": "npm version minor && git push origin master --tags && npm publish --access=public",
